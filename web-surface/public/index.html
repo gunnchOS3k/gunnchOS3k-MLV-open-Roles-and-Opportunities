@@ -7,45 +7,76 @@
   <title>Open roles · gunnchOS</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body style="--accent:#f0c14a">
+<body data-surfacekit="v2" data-theme="dark">
   <a class="skip" href="#content">Skip to content</a>
   <header class="top">
     <p class="mark">gunnchOS</p>
-    <a id="portal-return" href="#return" aria-label="Return to gunnchOS">← gunnchOS</a>
+    <nav class="tools" aria-label="Surface">
+      <button type="button" id="theme-toggle">Light theme</button>
+      <a id="portal-return" href="#return" aria-label="Return to gunnchOS">← gunnchOS</a>
+    </nav>
   </header>
   <main id="content">
-    <p class="kicker">3k MLV</p>
+    <p class="kicker">3k MLV · STAGING_WORKER</p>
     <h1>Open roles</h1>
-    <p class="badge">STAGING_WORKER</p>
     <p class="lead">Directory of open learning and experience roles. It does not hire, enroll, or pay anyone by itself.</p>
-    <section aria-labelledby="what">
-      <h2 id="what">What is this?</h2>
-      <p>Directory of open learning and experience roles. It does not hire, enroll, or pay anyone by itself.</p>
-      <p>This is a directory, not the underlying product.</p>
+    
+    <p><a class="cta" id="primary-action" href="#explore">Browse directory</a></p>
+    <section id="explore" aria-labelledby="explore-title">
+      <h2 id="explore-title">Browse directory</h2>
+      <p id="diagram-note"></p>
+      <div class="layout">
+        <div>
+          <svg id="diagram" role="img" aria-labelledby="diagram-note" viewBox="0 0 640 160"></svg>
+          <label for="row-select">Repository record</label>
+          <select id="row-select"></select>
+          <label for="row-filter">Filter records</label>
+          <input id="row-filter" type="search" placeholder="Filter by text in the repository records">
+        </div>
+        <div id="detail" tabindex="0" aria-live="polite"></div>
+      </div>
+      <div id="directory"></div>
+      <table id="evidence">
+        <caption>Records copied from this repository</caption>
+        <thead><tr id="evidence-head"></tr></thead>
+        <tbody id="evidence-body"></tbody>
+      </table>
     </section>
-    <section aria-labelledby="why">
-      <h2 id="why">Why does it exist?</h2>
-      <p>It gives this repository a public web surface inside the gunnchOS ecosystem without pretending the original runtime runs on Cloudflare Workers.</p>
+    <section id="overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">Overview</h2>
+      <div class="cards"><article><h3>Overview</h3><p>Directory of open learning and experience roles. It does not hire, enroll, or pay anyone by itself.</p></article></div>
     </section>
-    <section aria-labelledby="today">
-      <h2 id="today">What can I actually do with it today?</h2>
-      <ul><li>Read how roles are described</li><li>Open the source repository</li></ul>
+    <section id="methods" aria-labelledby="methods-title">
+      <h2 id="methods-title">Methods</h2>
+      <p>Run the repository locally. This Worker does not execute the native toolchain.</p>
+      <p>Native research runtimes stay on a local checkout. This page shows repository records only.</p>
     </section>
-    <section aria-labelledby="tech">
-      <h2 id="tech">What technology is inside it?</h2>
-      <p>Classification META_DIRECTORY_WORKER. Accepted source <code>b7b9cb2bdf562d2034b7008c9612ff948ea0406f</code>.</p>
+    <section id="artifacts" aria-labelledby="artifacts-title">
+      <h2 id="artifacts-title">Artifacts</h2>
+      <ul><li>No packaged download was attached on this page. Use the source repository.</li></ul>
     </section>
-    <section aria-labelledby="evidence">
-      <h2 id="evidence">What evidence exists?</h2>
-      <p><a href="https://github.com/gunnchOS3k/gunnchOS3k-MLV-open-Roles-and-Opportunities">Source repository</a>. Read the repository for methods, results, and status. This page does not add new experimental claims.</p>
+    <section id="source" aria-labelledby="source-title">
+      <h2 id="source-title">Source</h2>
+      <p><a href="https://github.com/gunnchOS3k/gunnchOS3k-MLV-open-Roles-and-Opportunities">Source repository</a></p>
+      <p>Pinned source <code>b7b9cb2bdf562d2034b7008c9612ff948ea0406f</code></p>
     </section>
-    <section aria-labelledby="limits">
-      <h2 id="limits">What is not finished?</h2>
+    <section id="limits" aria-labelledby="limits-title">
+      <h2 id="limits-title">Limitations</h2>
       <ul><li>No job offer, admission, or stipend is created by this page</li></ul>
     </section>
-    <section aria-labelledby="fit">
-      <h2 id="fit">Where does it fit in gunnchOS?</h2>
-      <p>Family: 3k MLV. Return with the gunnchOS link in the header.</p>
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About / Build status / Evidence</h2>
+      <h2 id="what">What is this?</h2>
+      <p>Directory of open learning and experience roles. It does not hire, enroll, or pay anyone by itself.</p>
+      <p>The research code is not executing here. This is a research surface.</p>
+      <h2 id="why">Why does it exist?</h2>
+      <p>It gives this repository a public web surface inside the gunnchOS ecosystem without pretending the original runtime runs on Cloudflare Workers.</p>
+      <h2 id="today">What can I actually do with it today?</h2>
+      <p>Use the primary action to inspect repository records, then open the source for the local toolchain.</p>
+      <h2 id="unfinished">What is not finished?</h2>
+      <ul><li>No job offer, admission, or stipend is created by this page</li></ul>
+      <p class="badge">STAGING_WORKER</p>
+      <p>Runtime mode on this page: PRECOMPUTED. No remote model call is made.</p>
     </section>
   </main>
   <script src="/app.js"></script>
