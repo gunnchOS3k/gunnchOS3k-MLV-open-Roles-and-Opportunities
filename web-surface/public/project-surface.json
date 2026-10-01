@@ -1,0 +1,20 @@
+{
+  "repo": "gunnchOS3k-MLV-open-Roles-and-Opportunities",
+  "productName": "Open roles",
+  "family": "3k MLV",
+  "classification": "META_DIRECTORY_WORKER",
+  "acceptedSha": "b7b9cb2bdf562d2034b7008c9612ff948ea0406f",
+  "status": "STAGING_WORKER",
+  "summary": "Directory of open learning and experience roles. It does not hire, enroll, or pay anyone by itself.",
+  "capabilities": [
+    "Read how roles are described",
+    "Open the source repository"
+  ],
+  "limitations": [
+    "No job offer, admission, or stipend is created by this page"
+  ],
+  "sourceUrl": "https://github.com/gunnchOS3k/gunnchOS3k-MLV-open-Roles-and-Opportunities",
+  "returnUrlEnv": "GUNNCHOS_PORTAL_URL",
+  "returnUrl": "https://gunnchos-site.gunnchos-finds.workers.dev",
+  "workerName": "gunnchos-mlv-roles"
+}
