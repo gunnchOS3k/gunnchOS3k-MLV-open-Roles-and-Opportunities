@@ -1,0 +1,14 @@
+{
+  "schema": "gunnchos.surfacekit.v2",
+  "measured_topology": false,
+  "diagram_note": "Reading aid built from repository headings. It is not a measured topology and it is not a live system.",
+  "nodes": [],
+  "rows": [],
+  "sources": [],
+  "sections": [],
+  "artifacts": [],
+  "methods": "",
+  "cards": [],
+  "runtime_mode": "PRECOMPUTED",
+  "runtime_boot": false
+}
